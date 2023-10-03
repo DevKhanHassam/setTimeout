@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+<p id="state">Battery Low </p>
+<span id="Battery" class="fa"></span>
+<button class="myButton" id="chargebutton">Plug Charger</button>
+<br>
+<button class="myButton" id="stop" disabled>Un-Plug</button>
+</div>
+</body>
+
+
+<style>
+body{
+    margin: 0;
+    padding: 0;
+     background-color: rgb(154, 154, 199); 
+
+  
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+
+p{
+  
+    font-size: 20px;
+    border: 10px ;
+    
+
+
+}
+
+span{
+font-size: 140px;
+color: rgb(204, 2, 2);   
+}
+
+
+
+.myButton {
+	background:linear-gradient(to bottom, #36c55c 5%, #9ed384 100%);
+	background-color:#00f742;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px 16px;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#090c07;
+}
+
+#stop{
+
+    color: red;
+    cursor: not-allowed;
+}
+
+</style>
+<script src="index.js"></script>
+</html>
